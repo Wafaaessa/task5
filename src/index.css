@@ -1,13 +1,337 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ 
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+/* navbar */
+/* navbar page */
+.navbar-brand {
+  color: rgb(28, 192, 169) !important;
+}
+.btn-danger {
+  /* background-color: #1c2c4c!important; */
+  border: none !important;
+  background-color: rgb(28, 192, 169) !important;
+}
+nav {
+  z-index: +99 !important;
+}
+
+.nav-item {
+  position: relative;
+}
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(28, 192, 169);
+  top: 90%;
+  left: 10%;
+  height: 2px;
+  width: 40px;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.nav-item a:hover,
+.nav-item:hover a:after {
+  visibility: visible;
+  width: 80%;
+}
+.display{
+  cursor: pointer;
+}
+/* register page */
+
+.bg-register-image {
+  background: url(bg.jpg);
+  background-position: cover;
+  background-position: center;
+  /* background-size: 100% 100%; */
+  /* border-radius: 10%; */
+  /* padding-bottom: 12%; */
+}
+
+.log {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(28, 192, 169);
+  padding: 10px;
+}
+.log:hover {
+  text-decoration: none;
+  color: rgb(28, 192, 169);
+}
+
+.btn-info {
+  background-color: rgb(28, 192, 169) !important;
+  color: #fff !important;
+  border: none !important;
+}
+.sign-in {
+  padding: 0;
+  margin: 0;
+}
+.sign-in > img {
+  height: 30px;
+  width: auto;
+}
+
+.fa-facebook {
+  font-size: 35px !important;
+  color: #0866ff !important;
+}
+.fa-google {
+  font-size: 35px !important;
+  color: red !important;
+}
+
+/* login page */
+.bg-register-image2 {
+  background: url(login@4x.png);
+  background-position: cover;
+  background-size: 100% 100%;
+  border-radius: 10%;
+}
+
+.contact-title2 h1 {
+  position: relative;
+}
+.contact-title2 h1::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 15%;
+  background-color: rgb(28, 192, 169);
+  top: 115%;
+  left: 29%;
+}
+.orwith {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  padding: 24px 0 0;
+  padding-bottom: 20px;
+  /* padding: var(--spacing-3) 0 0 0; */
+  /* background-color: #0866FF !important; */
+}
+.orwith:after,
+.orwith:before {
+  content: "";
+  /* border-bottom: 1px solid #c2c8d0; */
+  /* border-bottom: 1px solid var(--border-default-color); */
+  flex: 1 0 auto;
+  height: 1.1px;
+  margin: 8px;
+  background-color: #c2c8d0 !important;
+}
+.or {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.member {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* welcome page */
+.welcome {
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+  color: #7cc5d9;
+}
+.welcome :is(h2, p, img) {
+  margin-bottom: 20px;
+}
+
+/* chat box page */
+.chat-box {
+  background-color: rgb(28, 42, 74) !important;
+  /* padding-bottom: 5%; */
+  /* background-color: rgb(28,192,169) !important; */
+}
+
+/* chat component */
+.messages-wrapper {
+  padding: 10px;
+  margin-bottom: 60px;
+}
+.chat-bubble {
+  border-radius: 20px 20px 20px 0;
+  padding: 15px;
+  background-color: #7cc5d9;
+  color: #1c2c4c;
+  width: max-content;
+  max-width: calc(100% - 50px);
+  box-shadow: -2px 2px 1px 1px #4c768d;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.chat-bubble.right {
+  margin-left: auto;
+  border-radius: 20px 20px 0 20px;
+  background-color: #fff;
+  box-shadow: -2px 2px 1px 1px #88dded;
+}
+.chat-bubble__left {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 8.5px;
+}
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #1c2c4c;
+}
+.user-message {
+  word-break: break-all;
+}
+.message-time {
+  display: block;
+  text-align: right;
+}
+
+/* send message */
+.send-message {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #4c768d;
+  display: flex;
+}
+.send-message > input {
+  height: 40px;
+  width: 80%;
+  padding: 10px 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  flex-grow: 1;
+  background-color: white;
+  color: #1c2c4c;
+  font-size: 1rem;
+}
+.send-message > input:placeholder {
+  color: #ddd;
+}
+.send-message > :is(input, button):focus {
+  outline: none;
+  border-bottom: 1px solid #7cc5d9;
+}
+.send-message > button {
+  width: 70px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 0;
+  color: #242443;
+  border: 1px solid #7cc5d9;
+  background-color: #7cc5d9;
+  font-weight: 600;
+}
+
+.face:hover {
+  color: gold !important;
+}
+.face {
+  background-color: white !important;
+  border: none !important;
+  font-size: 20px !important;
+  margin-right: 20px;
+}
+.emoji-picker-container {
+  position: absolute;
+  bottom: 100%; /* Position above the input field */
+  left: 55%;
+  z-index: 1; /* Ensure the picker appears above other elements */
+}
+
+/* Dashboard Page */
+.goProfile {
+  text-decoration: none;
+  color: #4c768d;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-info {
+  font-weight: bold !important;
+}
+.btn-info:hover {
+  background-color: gainsboro !important;
+  color: rgb(28, 192, 169) !important;
+  border: none !important;
+}
+.contain-dash {
+  box-shadow: 10px 10px 10px 10px rgba(17, 18, 18, 0.1); /* Apply box shadow to the container */
+  border-radius: 10px;
+  background-color: #f7f2f2;
+}
+
+.contact-title3 h1 {
+  position: relative;
+  margin-bottom: 7%;
+}
+.contact-title3 h1::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 22%;
+  background-color: rgb(28, 192, 169);
+  top: 115%;
+  left: 13%;
+}
+
+/* create chat room page */
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.contain-create {
+  box-shadow: 10px 10px 10px 10px rgba(28, 192, 169, 0.1); /* Apply box shadow to the container */
+  border-radius: 10px;
+  background-color: #f7f2f2;
+}
+/* join chat room page */
+
+.contain-join {
+  box-shadow: 10px 10px 10px 10px rgba(28, 192, 169, 0.1); /* Apply box shadow to the container */
+  border-radius: 10px;
+  background-color: #f7f2f2;
+}
+
+/* Profile Page */
+
+.contact-title4 h1 {
+  position: relative;
+  margin-bottom: 3%;
+}
+.contact-title4 h1::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 3%;
+  background-color: rgb(28, 192, 169);
+  top: 115%;
+  left: 48%;
+}
+.name,
+.green {
+  color: rgb(28, 192, 169);
+}
+.images {
+  width: 12%;
 }
