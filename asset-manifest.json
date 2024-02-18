@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/task5/static/css/main.18b6d221.css",
+    "main.js": "/task5/static/js/main.dbda0d67.js",
+    "static/js/787.bddd5d7b.chunk.js": "/task5/static/js/787.bddd5d7b.chunk.js",
+    "static/media/fa-solid-900.ttf": "/task5/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
+    "static/media/fa-brands-400.ttf": "/task5/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
+    "static/media/fa-solid-900.woff2": "/task5/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2",
+    "static/media/bg.jpg": "/task5/static/media/bg.5566179468a806385894.jpg",
+    "static/media/fa-brands-400.woff2": "/task5/static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2",
+    "static/media/fa-regular-400.ttf": "/task5/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf",
+    "static/media/facebook.png": "/task5/static/media/facebook.790642551cd99bb66a7e.png",
+    "static/media/fa-regular-400.woff2": "/task5/static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2",
+    "static/media/google.png": "/task5/static/media/google.42fd3f19a12c832a09b5.png",
+    "static/media/login@4x.png": "/task5/static/media/login@4x.8aa9b0673a7e6ceee23a.png",
+    "static/media/fa-v4compatibility.ttf": "/task5/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
+    "static/media/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.avif": "/task5/static/media/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.cff2013a4198cb92b2e0.avif",
+    "static/media/fa-v4compatibility.woff2": "/task5/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
+    "index.html": "/task5/index.html",
+    "main.18b6d221.css.map": "/task5/static/css/main.18b6d221.css.map",
+    "main.dbda0d67.js.map": "/task5/static/js/main.dbda0d67.js.map",
+    "787.bddd5d7b.chunk.js.map": "/task5/static/js/787.bddd5d7b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18b6d221.css",
+    "static/js/main.dbda0d67.js"
+  ]
+}
